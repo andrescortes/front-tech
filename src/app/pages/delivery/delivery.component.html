@@ -1,0 +1,54 @@
+<div class="container">
+  <form [formGroup]="addressForm" (ngSubmit)="onSubit()" class="form">
+    <label for="example">Calle 35 # 54-43 Torre 5 Apt 502</label>
+
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" name="name" formControlName="name" />
+    </div>
+
+    <div class="form-group">
+      <label for="initialNumber">initial number</label>
+      <input type="text" name="initialNumber" formControlName="initialNumber" />
+    </div>
+
+    <div class="form-group">
+      <label for="typeStreet">type street</label>
+      <input type="text" name="typeStreet" formControlName="typeStreet" />
+    </div>
+
+    <div class="form-group">
+      <label for="hash">symbol</label>
+      <input type="text" name="hash" formControlName="hash" />
+    </div>
+
+    <div class="form-group">
+      <label for="secondNumber">second number</label>
+      <input type="text" name="secondNumber" formControlName="secondNumber" />
+    </div>
+
+    <div class="form-group">
+      <label for="subInfo">sub info</label>
+      <input type="text" name="subInfo" formControlName="subInfo" />
+    </div>
+
+    <div class="form-group">
+      <label for="separator">separator</label>
+      <input type="text" name="separator" formControlName="separator" />
+    </div>
+
+    <div class="form-group">
+      <label for="finalNumber">final number</label>
+      <input type="text" name="finalNumber" formControlName="finalNumber" />
+    </div>
+
+    <div class="form-group">
+      <label for="extraInfo">extra info</label>
+      <input type="text" name="extraInfo" formControlName="extraInfo" />
+    </div>
+    <div class="form-group">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</div>
+<app-display></app-display>

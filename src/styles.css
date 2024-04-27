@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.center-fixed {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.center-fixed > p {
+  font-size: 50px;
+  text-align: center;
+}
+.form {
+  margin-left: 10px;
+  background: #ecf5f2;
+  /* display: flex;
+    justify-content: center; */
+  /* align-items: center; */
+}
+
+.form-group {
+  margin: 5px 5px;
+}
+
+.form-group > input {
+  margin-left: 10px;
+}
